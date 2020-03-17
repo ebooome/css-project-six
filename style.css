@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,800&display=swap');
+
+* {
+    /* box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성입니다. 
+       border : 테두리를 기준으로 크기를 정합니다.*/
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins';
+    background: linear-gradient(to right, #DAE2F8, #D6A4A4);
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 3fr 0.5fr;
+    height: 100vh;
+}
+
+.header{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.header .header__menu-icon{
+    transform: rotate(90deg);
+    font-weight: 800;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.portfolio{
+    display: grid;
+    padding-left: 90px;
+    grid-template-columns: minmax(250px, 1fr);
+    grid-auto-columns: minmax(250px, 1fr);
+    grid-template-rows: 45vh;
+    grid-auto-flow: column;
+    overflow: scroll;
+    grid-gap: 50px;
+    padding-bottom: 50px;
+    align-self: center;
+}
+
+.portfolio::-webkit-scrollbar{
+    display: none;
+}
+
+.portfolio .portfolio__item{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(https://www.booooooom.com/wp-content/uploads/2020/03/SeoYoung7.jpg);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 38px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+}
+
+.portfolio .portfolio__item:nth-child(2){
+    background-image: url(https://www.booooooom.com/wp-content/uploads/2020/03/SeoYoung4.jpg);
+}
+
+.portfolio .portfolio__item:nth-child(3){
+    background-image: url(https://www.booooooom.com/wp-content/uploads/2020/03/SeoYoung1.jpg);
+}
+
+.portfolio .portfolio__item:nth-child(4){
+    background-image: url(https://www.booooooom.com/wp-content/uploads/2020/03/SeoYoung6.jpg);
+}
+
+.portfolio .portfolio__item:nth-child(5){
+    background-image: url(https://www.booooooom.com/wp-content/uploads/2020/03/SeoYoung5.jpg);
+}
+
+.portfolio__item .item__info{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.navigation{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0px 40px;
+}
+
+.navigation .navigation__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-columns: repeat(auto-fill, minmax(min-content, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    font-weight: 200;
+}
+
+.navigation__icons .navigation__icon:last-child{
+    margin-left: 10px;
+}
+
+.navigation .navigation__item--selected{
+    color:#2c2c2c;
+    font-weight: 400;
+}
+
+.backgroundPage{
+    width: 90%;
+    height: 90vh;
+    background-color: white;    
+    margin-top: 5vh;
+    margin-left: 5%;
+    overflow:hidden;
+    display: grid;
+    grid-template-rows: 0.4fr, 2fr, 0.7fr;
+    border-radius: 20px;
+    padding-right: 15px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 38px rgba(0, 0, 0, 0.2);
+}
+
